@@ -1,0 +1,22 @@
+{% extends 'base.html'%} {% import 'bootstrap/wtf.html' as wtf%} {% block content %}
+<div class="container">
+    <div class="row" style="margin-top: 50px;">
+        <div class="col-md-2"> </div>
+        <div class="jumbotron">
+
+            {{wtf.quick_form(registration_form)}}
+
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</div>
+<style>
+    body {
+        background-color: green;
+    }
+
+    .container {
+        margin-top: 50px;
+    }
+</style>
+{% endblock%}
